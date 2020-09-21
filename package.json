@@ -33,16 +33,12 @@
     "tslib": "^2.0.0"
   },
   "scripts": {
-    "abi": "npm run build; ./scripts/abi.sh",
-    "build": "./scripts/build.sh",
-    "clean": "rm -rf node_modules build/contracts",
     "lint": "prettier ./test/*.ts --check",
     "precompile": "rimraf ./build/",
     "compile": "waffle",
     "pretest": "yarn compile",
     "test": "mocha",
-    "prepublishOnly": "yarn test",
-    "deploy": "./scripts/deploy.sh"
+    "prepublishOnly": "yarn test"
   },
   "license": "GPL-3.0-or-later",
   "main": "truffle-config.js",

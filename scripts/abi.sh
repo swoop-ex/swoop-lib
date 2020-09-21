@@ -3,9 +3,6 @@ rm -rf build/abi
 mkdir -p build/abi
 
 contracts=(
-UniswapV2HRC20
-UniswapV2Factory
-UniswapV2Pair
 )
 
 for contract in "${contracts[@]}"; do

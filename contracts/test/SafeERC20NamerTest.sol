@@ -2,25 +2,25 @@
 
 pragma solidity >=0.5.0;
 
-import '../libraries/SafeHRC20Namer.sol';
+import '../libraries/SafeERC20Namer.sol';
 
 // used for testing the logic of token naming
-contract SafeHRC20NamerTest {
+contract SafeERC20NamerTest {
     function tokenSymbol(address token) public view returns (string memory)  {
-        return SafeHRC20Namer.tokenSymbol(token);
+        return SafeERC20Namer.tokenSymbol(token);
     }
 
     function tokenName(address token) public view returns (string memory)  {
-        return SafeHRC20Namer.tokenName(token);
+        return SafeERC20Namer.tokenName(token);
     }
 }
 
 // does not implement name or symbol
-contract NamerTestFakeOptionalHRC20 {
+contract NamerTestFakeOptionalERC20 {
 }
 
-// complies with HRC20 and returns strings
-contract NamerTestFakeCompliantHRC20 {
+// complies with ERC20 and returns strings
+contract NamerTestFakeCompliantERC20 {
     string public name;
     string public symbol;
     constructor (string memory name_, string memory symbol_) public {
@@ -30,7 +30,7 @@ contract NamerTestFakeCompliantHRC20 {
 }
 
 // implements name and symbol but returns bytes32
-contract NamerTestFakeNoncompliantHRC20 {
+contract NamerTestFakeNoncompliantERC20 {
     bytes32 public name;
     bytes32 public symbol;
     constructor (bytes32 name_, bytes32 symbol_) public {

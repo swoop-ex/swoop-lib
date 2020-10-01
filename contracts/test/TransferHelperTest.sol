@@ -18,13 +18,13 @@ contract TransferHelperTest {
         TransferHelper.safeTransferFrom(token, from, to, value);
     }
 
-    function safeTransferONE(address to, uint value) external {
-        TransferHelper.safeTransferONE(to, value);
+    function safeTransferETH(address to, uint value) external {
+        TransferHelper.safeTransferETH(to, value);
     }
 }
 
 // can revert on failure and returns true if successful
-contract TransferHelperTestFakeHRC20Compliant {
+contract TransferHelperTestFakeERC20Compliant {
     bool public success;
     bool public shouldRevert;
 
@@ -50,7 +50,7 @@ contract TransferHelperTestFakeHRC20Compliant {
 }
 
 // only reverts on failure, no return value
-contract TransferHelperTestFakeHRC20Noncompliant {
+contract TransferHelperTestFakeERC20Noncompliant {
     bool public shouldRevert;
 
     function setup(bool shouldRevert_) public {
@@ -81,4 +81,3 @@ contract TransferHelperTestFakeFallback {
         require(!shouldRevert);
     }
 }
-

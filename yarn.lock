@@ -460,7 +460,7 @@
     "@harmony-js/transaction" "0.1.55"
     "@harmony-js/utils" "0.1.55"
 
-"@harmony-js/core@0.1.55", "@harmony-js/core@^0.1.53":
+"@harmony-js/core@0.1.55", "@harmony-js/core@^0.1.55":
   version "0.1.55"
   resolved "https://registry.yarnpkg.com/@harmony-js/core/-/core-0.1.55.tgz#d2cb216e204db5d469297dec508262c39af0c0cc"
   integrity sha512-fUGwtEvZtKNuAq83Jklfrbml8/NZKWMhMI//zvFRxO54NPOl6e1tbrN09Sxd3CX4v8iuWRjihtSyC8ex3VIStg==

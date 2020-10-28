@@ -6,13 +6,13 @@
     "contracts",
     "!contracts/test"
   ],
-  "homepage": "https://swoop.demo.harmony.one",
+  "homepage": "https://swoop.demo.--",
   "repository": {
-    "url": "git+https://github.com/harmony-one/swoop-lib.git",
+    "url": "git+https://github.com/swoop-ex/swoop-lib.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/harmony-one/swoop-lib/issues"
+    "url": "https://github.com/swoop-ex/swoop-lib/issues"
   },
   "engines": {
     "node": ">=10"

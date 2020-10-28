@@ -1,6 +1,6 @@
 # swoop-lib
 
-[![Actions Status](https://github.com/harmony-one/swoop-lib/workflows/CI/badge.svg)](https://github.com/harmony-one/swoop-lib/actions)
+[![Actions Status](https://github.com/swoop-ex/swoop-lib/workflows/CI/badge.svg)](https://github.com/swoop-ex/swoop-lib/actions)
 [![npm](https://img.shields.io/npm/v/@swoop-exchange/lib)](https://unpkg.com/@swoop-exchange/lib@latest/)
 
 Solidity libraries that are shared across Swoop contracts. These libraries are focused on safety and gas efficiency.
